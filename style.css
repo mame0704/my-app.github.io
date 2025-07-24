@@ -1,0 +1,78 @@
+/* ベーススタイル（モバイルファースト） */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+#topic-btn {
+    background-color: #e53935; /* 赤色 */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#topic-btn:hover {
+    background-color: #c62828;
+}
+
+#topic-display {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #444;
+    min-height: 40px;
+    line-height: 1.5;
+}
+
+/* タブレット以上（画面幅768px〜） */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #topic-display {
+    font-size: 20px;
+  }
+}
+
+/* デスクトップ以上（画面幅1024px〜） */
+@media (min-width: 1024px) {
+  body {
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  #topic-btn {
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+}
